@@ -13,6 +13,7 @@ return [
         'children' => [
             'Installation' => 'docs/installation',
             'Authorizing Accounts' => 'docs/authorization',
+            'Migrating From MWS' => 'docs/migrating-from-mws',
             'Authenticating Requests' => 'docs/authentication',
         ],
     ],
