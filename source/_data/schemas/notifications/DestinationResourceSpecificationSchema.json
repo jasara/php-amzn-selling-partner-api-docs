@@ -1,0 +1,14 @@
+[
+    {
+        "schema": "notifications/DestinationResourceSchema.sqs"
+    },
+    {
+        "schema": "notifications/DestinationResourceSchema.event_bridge"
+    },
+    {
+        "includeSchema": "notifications/SqsResourceSchema"
+    },
+    {
+        "includeSchema": "notifications/EventBridgeResourceSpecificationSchema"
+    }
+]

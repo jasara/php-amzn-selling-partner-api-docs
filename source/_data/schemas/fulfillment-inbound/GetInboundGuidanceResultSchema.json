@@ -1,0 +1,38 @@
+[
+    {
+        "key": "sku_inbound_guidance_list",
+        "type": "schema",
+        "description": "A list of SKU inbound guidance information.",
+        "example": "SKUInboundGuidanceListSchema"
+    },
+    {
+        "includeSchema": "fulfillment-inbound/SKUInboundGuidanceListSchema"
+    },
+    {
+        "key": "invalid_sku_list",
+        "type": "schema",
+        "description": "A list of invalid SKU values and the reason they are invalid.",
+        "example": "InvalidSKUListSchema"
+    },
+    {
+        "includeSchema": "fulfillment-inbound/InvalidSKUListSchema"
+    },
+    {
+        "key": "asin_inbound_guidance_list",
+        "type": "schema",
+        "description": "A list of ASINs and their associated inbound guidance.",
+        "example": "ASINInboundGuidanceListSchema"
+    },
+    {
+        "includeSchema": "fulfillment-inbound/ASINInboundGuidanceListSchema"
+    },
+    {
+        "key": "invalid_asin_list",
+        "type": "schema",
+        "description": "A list of invalid ASIN values and the reason they are invalid.",
+        "example": "InvalidASINListSchema"
+    },
+    {
+        "includeSchema": "fulfillment-inbound/InvalidASINListSchema"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "key": "arn",
+        "type": "string (max: 1000)",
+        "description": "The Amazon Resource Name (ARN) associated with the SQS queue.",
+        "example": "arn:aws:sqs:us-east-2:444455556666:queue1"
+    }
+]

@@ -1,0 +1,9 @@
+/build_*/
+/node_modules/
+/vendor/
+/tests
+.phpunit.result.cache
+/source/assets/build/
+npm-debug.log
+.env
+.DS_Store

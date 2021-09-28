@@ -1,0 +1,40 @@
+[
+    {
+        "key": "ship_from_address",
+        "type": "schema",
+        "description": "The address from which the inbound shipment will be sent.",
+        "example": "AddressSchema"
+    },
+    {
+        "includeSchema": "AddressSchema"
+    },
+    {
+        "key": "label_prep_preference",
+        "type": "string (enum)",
+        "description": "The seller's preference for label preparation for an inbound shipment. <a href=\"https://github.com/amzn/selling-partner-api-docs/blob/main/references/fulfillment-inbound-api/fulfillmentInboundV0.md#labelpreppreference\" target=\"blank\">See valid values.</a>.",
+        "example": "SELLER_LABEL"
+    },
+    {
+        "key": "ship_to_country_code",
+        "type": "string (max: 2)",
+        "description": "The two-character country code for the country where the inbound shipment is to be sent. Default: The country code for the seller's home marketplace.",
+        "example": "US",
+        "optional": true
+    },
+    {
+        "key": "ship_to_country_subdivision_code",
+        "type": "string",
+        "description": "The two-character country code, followed by a dash and then up to three characters that represent the subdivision of the country where the inbound shipment is to be sent. For example, \"IN-MH\". In full ISO 3166-2 format.",
+        "example": "IN-MH",
+        "optional": true
+    },
+    {
+        "key": "inbound_shipment_plan_request_items",
+        "type": "schema",
+        "description": "The list of inbound shipment items",
+        "example": "InboundShipmentPlanRequestItemListSchema"
+    },
+    {
+        "includeSchema": "fulfillment-inbound/InboundShipmentPlanRequestItemListSchema"
+    }
+]

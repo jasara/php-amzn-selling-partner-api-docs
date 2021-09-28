@@ -1,0 +1,17 @@
+[
+    {
+        "schema": "fulfillment-inbound/SKUInboundGuidanceSchema.seller_sku"
+    },
+    {
+        "key": "fulfillment_network_sku",
+        "type": "string",
+        "description": "Amazon's fulfillment network SKU of the item.",
+        "example": "X00ABC123ABC"
+    },
+    {
+        "schema": "fulfillment-inbound/InboundShipmentPlanRequestItemSchema.quantity"
+    },
+    {
+        "schema": "fulfillment-inbound/InboundShipmentPlanRequestItemSchema.prep_details_list"
+    }
+]

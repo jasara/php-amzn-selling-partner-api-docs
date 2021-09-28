@@ -1,0 +1,29 @@
+[
+    {
+        "key": "total_units",
+        "type": "integer",
+        "description": "The number of units to ship.",
+        "example": "12",
+        "optional": true
+    },
+    {
+        "key": "fee_per_unit",
+        "type": "schema",
+        "description": "The manual processing fee per unit.",
+        "example": "AmountSchema",
+        "optional": true
+    },
+    {
+        "includeSchema": "AmountSchema"
+    },
+    {
+        "key": "total_fee",
+        "type": "schema",
+        "description": "The total manual processing fee for the shipment.",
+        "example": "AmountSchema",
+        "optional": true
+    },
+    {
+        "includeSchema": "AmountSchema"
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "key": "name",
+        "type": "string (max: 50)",
+        "description": "Name of the individual or business.",
+        "example": "ACME Inc."
+    },
+    {
+        "key": "address_line_1",
+        "type": "string (max: 180)",
+        "description": "The street address information.",
+        "example": "123 Sample St"
+    },
+    {
+        "key": "address_line_2",
+        "type": "string (max: 60)",
+        "description": "Additional street address information, if required.",
+        "example": "Suite B",
+        "optional": true
+    },
+    {
+        "key": "district_or_county",
+        "type": "string (max: 25)",
+        "description": "The district or county.",
+        "example": "Wise County",
+        "optional": true
+    },
+    {
+        "key": "city",
+        "type": "string (max: 30)",
+        "description": "The city",
+        "example": "New York"
+    },
+    {
+        "key": "state_or_province_code",
+        "type": "string",
+        "description": "The state or province code.",
+        "example": "NY"
+    },
+    {
+        "key": "country_code",
+        "type": "string (max: 2)",
+        "description": "The country code in two-character ISO 3166-1 alpha-2 format.",
+        "example": "US"
+    },
+    {
+        "key": "postal_code",
+        "type": "string (max: 30)",
+        "description": "The postal code.",
+        "example": "21221"
+    }
+]

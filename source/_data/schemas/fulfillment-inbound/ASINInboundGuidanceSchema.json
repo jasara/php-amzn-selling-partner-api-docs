@@ -1,0 +1,11 @@
+[
+    {
+        "schema": "fulfillment-inbound/SKUInboundGuidanceSchema.asin"
+    },
+    {
+        "schema": "fulfillment-inbound/SKUInboundGuidanceSchema.inbound_guidance"
+    },
+    {
+        "schema": "fulfillment-inbound/SKUInboundGuidanceSchema.guidance_reason_list"
+    }
+]

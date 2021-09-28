@@ -1,0 +1,14 @@
+[
+    {
+        "key": "currency_code",
+        "type": "string",
+        "description": "The currency code.",
+        "example": "USD"
+    },
+    {
+        "key": "value",
+        "type": "string (big decimal)",
+        "description": "The amount.",
+        "example": "100.00"
+    }
+]

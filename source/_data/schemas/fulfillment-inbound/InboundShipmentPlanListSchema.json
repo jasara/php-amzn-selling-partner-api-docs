@@ -1,0 +1,5 @@
+[
+    {
+        "includeSchema": "fulfillment-inbound/InboundShipmentPlanSchema"
+    }
+]

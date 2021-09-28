@@ -1,0 +1,11 @@
+[
+    {
+        "key": "request",
+        "type": "schema",
+        "description": "The object containing the data from the request",
+        "example": "CreateInboundShipmentPlanRequest"
+    },
+    {
+        "includeSchema": "fulfillment-inbound/CreateInboundShipmentPlanRequest"
+    }
+]

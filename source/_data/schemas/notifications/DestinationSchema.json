@@ -1,0 +1,23 @@
+[
+    {
+        "key": "name",
+        "type": "string (max:256)",
+        "description": "The developer-defined name for this destination.",
+        "example": "SQSDestination"
+    },
+    {
+        "key": "destination_id",
+        "type": "string",
+        "description": "The destination identifier generated when you created the destination.",
+        "example": "3acafc7e-121b-1329-8ae8-1571be663aa2"
+    },
+    {
+        "key": "resource",
+        "type": "schema",
+        "description": "The resource that will receive notifications associated with this destination.",
+        "example": "DestinationResourceSchema"
+    },
+    {
+        "includeSchema": "notifications/DestinationResourceSchema"
+    }
+]

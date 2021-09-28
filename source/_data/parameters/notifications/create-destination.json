@@ -1,0 +1,14 @@
+[
+    {
+        "schema": "notifications/DestinationSchema.name"
+    },
+    {
+        "key": "resourceSpecification",
+        "type": "schema",
+        "description": "The resource that will receive notifications associated with this destination.",
+        "example": "DestinationResourceSpecificationSchema"
+    },
+    {
+        "includeSchema": "notifications/DestinationResourceSpecificationSchema"
+    }
+]

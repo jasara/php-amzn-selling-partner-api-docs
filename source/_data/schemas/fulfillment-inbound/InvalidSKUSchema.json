@@ -1,0 +1,11 @@
+[
+    {
+        "schema": "fulfillment-inbound/SKUInboundGuidanceSchema.seller_sku"
+    },
+    {
+        "key": "error_reason",
+        "type": "string (enum)",
+        "description": "The reason why the seller SKU/ASIN is invalid. <a href=\"https://github.com/amzn/selling-partner-api-docs/blob/main/references/fulfillment-inbound-api/fulfillmentInboundV0.md#errorreason\" target=\"_blank\">See valid values</a>.",
+        "example": "DoesNotExist"
+    }
+]

@@ -1,0 +1,12 @@
+[
+    {
+        "key": "inbound_shipment_plans",
+        "type": "schema",
+        "description": "A list of inbound shipment plan information",
+        "example": "InboundShipmentPlanListSchema",
+        "optional": true
+    },
+    {
+        "includeSchema": "fulfillment-inbound/InboundShipmentPlanListSchema"
+    }
+]

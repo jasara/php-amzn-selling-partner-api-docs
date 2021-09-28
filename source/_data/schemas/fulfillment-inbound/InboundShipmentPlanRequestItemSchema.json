@@ -1,0 +1,37 @@
+[
+    {
+        "schema": "fulfillment-inbound/SKUInboundGuidanceSchema.seller_sku"
+    },
+    {
+        "schema": "fulfillment-inbound/SKUInboundGuidanceSchema.asin"
+    },
+    {
+        "key": "condition",
+        "type": "string (enum)",
+        "description": "The condition of the item. <a href=\"https://github.com/amzn/selling-partner-api-docs/blob/main/references/fulfillment-inbound-api/fulfillmentInboundV0.md#condition\" target=\"_blank\">See valid values</a>.",
+        "example": "NewItem"
+    },
+    {
+        "key": "quantity",
+        "type": "integer",
+        "description": "The item quantity.",
+        "example": "12"
+    },
+    {
+        "key": "quantity_in_case",
+        "type": "integer",
+        "description": "The item quantity in each case, for case-packed items. Note that QuantityInCase multiplied by the number of cases in the inbound shipment equals Quantity. Also note that all of the boxes of an inbound shipment must either be case packed or individually packed. For that reason, when you submit the createInboundShipmentPlan operation, the value of QuantityInCase must be provided for every item in the shipment or for none of the items in the shipment.",
+        "example": "4",
+        "optional": true
+    },
+    {
+        "key": "prep_details_list",
+        "type": "schema",
+        "description": "A list of preparation instructions and who is responsible for that preparation.",
+        "example": "PrepDetailsListSchema",
+        "optional": true
+    },
+    {
+        "includeSchema": "fulfillment-inbound/PrepDetailsListSchema"
+    }
+]

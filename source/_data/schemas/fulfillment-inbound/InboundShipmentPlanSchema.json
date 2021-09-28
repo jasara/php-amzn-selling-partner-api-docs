@@ -1,0 +1,48 @@
+[
+    {
+        "key": "shipment_id",
+        "type": "string",
+        "description": "A shipment identifier originally returned by the createInboundShipmentPlan operation.",
+        "example": "FBA123ABC123"
+    },
+    {
+        "key": "destination_fulfillment_center_id",
+        "type": "string",
+        "description": "An Amazon fulfillment center identifier created by Amazon.",
+        "example": "AVP1"
+    },
+    {
+        "key": "ship_to_address",
+        "type": "schema",
+        "description": "The address of the Amazon fulfillment center to which to ship the items.",
+        "example": "AddressSchema"
+    },
+    {
+        "includeSchema": "AddressSchema"
+    },
+    {
+        "key": "label_prep_type",
+        "type": "string (enum)",
+        "description": "The type of label preparation that is required for the inbound shipment. <a href=\"https://github.com/amzn/selling-partner-api-docs/blob/main/references/fulfillment-inbound-api/fulfillmentInboundV0.md#labelpreptype\" target=\"blank\">See valid values.</a>.",
+        "example": "SELLER_LABEL"
+    },
+    {
+        "key": "items",
+        "type": "schema",
+        "description": "SKU and quantity information for the items in the shipment.",
+        "example": "InboundShipmentPlanItemListSchema"
+    },
+    {
+        "includeSchema": "fulfillment-inbound/InboundShipmentPlanItemListSchema"
+    },
+    {
+        "key": "estimated_box_contents_fee",
+        "type": "schema",
+        "description": "The manual processing fee per unit and total fee for a shipment.",
+        "example": "BoxContentsFeeDetailsSchema",
+        "optional": true
+    },
+    {
+        "includeSchema": "fulfillment-inbound/BoxContentsFeeDetailsSchema"
+    }
+]

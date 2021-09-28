@@ -1,0 +1,8 @@
+[
+    {
+        "schema": "notifications/EventBridgeResourceSchema.region"
+    },
+    {
+        "schema": "notifications/EventBridgeResourceSchema.account_id"
+    }
+]

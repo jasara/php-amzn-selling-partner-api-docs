@@ -1,0 +1,22 @@
+[
+    {
+        "key": "marketplace_id",
+        "type": "string",
+        "description": "A valid marketplace ID",
+        "example": "ATVPDKIKX0DER"
+    },
+    {
+        "key": "seller_sku_list",
+        "type": "array<string>",
+        "description": "An array of Seller SKUs to filter by",
+        "example": "['CR-ABC-4122']",
+        "optional": true
+    },
+    {
+        "key": "asin_list",
+        "type": "array<string>",
+        "description": "An array of ASINs to filter by",
+        "example": "['B01A55GA98A']",
+        "optional": true
+    }
+]

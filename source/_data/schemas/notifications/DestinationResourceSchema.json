@@ -1,0 +1,20 @@
+[
+    {
+        "key": "sqs",
+        "type": "schema",
+        "description": "An Amazon Simple Queue Service (SQS) queue destination.",
+        "example": "SqsResourceSchema"
+    },
+    {
+        "key": "event_bridge",
+        "type": "schema",
+        "description": "An Amazon EventBridge destination.",
+        "example": "SqsResourceSchema"
+    },
+    {
+        "includeSchema": "notifications/SqsResourceSchema"
+    },
+    {
+        "includeSchema": "notifications/EventBridgeResourceSchema"
+    }
+]

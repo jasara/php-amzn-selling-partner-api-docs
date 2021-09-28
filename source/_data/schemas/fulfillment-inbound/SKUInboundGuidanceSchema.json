@@ -1,0 +1,26 @@
+[
+    {
+        "key": "seller_sku",
+        "type": "string",
+        "description": "The seller SKU of the item.",
+        "example": "CR-ABC-1234"
+    },
+    {
+        "key": "asin",
+        "type": "string",
+        "description": "The Amazon Standard Identification Number (ASIN) of the item.",
+        "example": "B01A55GA98A"
+    },
+    {
+        "key": "inbound_guidance",
+        "type": "string (enum)",
+        "description": "Specific inbound guidance for an item. <a href=\"https://github.com/amzn/selling-partner-api-docs/blob/main/references/fulfillment-inbound-api/fulfillmentInboundV0.md#inboundguidance\" target=\"_blank\">See valid values</a>.",
+        "example": "InboundOK"
+    },
+    {
+        "key": "guidance_reason_list",
+        "type": "array<string> (enum)",
+        "description": "A list of inbound guidance reason information. <a href=\"https://github.com/amzn/selling-partner-api-docs/blob/main/references/fulfillment-inbound-api/fulfillmentInboundV0.md#guidancereason\" target=\"_blank\">See valid values</a>.",
+        "example": "['SlowMovingASIN']"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "key": "notification_type",
+        "type": "string (enum)",
+        "example": "ANY_OFFER_CHANGED",
+        "description": "A valid notification type from <a href=\"https://github.com/amzn/selling-partner-api-docs/blob/main/references/notifications-api/notifications.md#notificationtype\">this list</a>."
+    }
+]

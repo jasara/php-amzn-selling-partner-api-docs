@@ -1,0 +1,14 @@
+[
+    {
+        "key": "prep_instruction",
+        "type": "string (enum)",
+        "description": "Preparation instructions for shipping an item to Amazon's fulfillment network. <a href=\"https://github.com/amzn/selling-partner-api-docs/blob/main/references/fulfillment-inbound-api/fulfillmentInboundV0.md#prepinstruction\" target=\"blank\">See valid values.</a>.",
+        "example": "Polybagging"
+    },
+    {
+        "key": "prep_owner",
+        "type": "string (enum)",
+        "description": "Indicates who will prepare the item. <a href=\"https://github.com/amzn/selling-partner-api-docs/blob/main/references/fulfillment-inbound-api/fulfillmentInboundV0.md#prepowner\" target=\"blank\">See valid values.</a>.",
+        "example": "AMAZON"
+    }
+]
