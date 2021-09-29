@@ -60,7 +60,7 @@ array:2 [▼
 The context also contains the response headers and the response data as an array:
 
 ```php
-var_dump($request_context);
+var_dump($response_context);
 
 array:2 [▼
   "response_headers" => [
@@ -73,6 +73,41 @@ array:2 [▼
       "destinationId" => "3acafc7e-121b-1329-8ae8-1571be663aa2"
     ]
   ]
+]
+```
+
+## Exception Logging
+
+When throwing an exception, the library will also call the logger at the error level.
+
+```
+[AmznSPA] Response Error GET https://sellingpartnerapi-eu.amazon.com/notifications/v1/subscriptions/ANY_OFFER_CHANGED -- HTTP request returned status code 403: {"error_description":"Client authentication failed","error":"invalid_client"}
+```
+
+The context contains as much information as possible about the request and the response.
+
+```php
+var_dump($exception_log_context);
+
+array:5 [▼
+  "unsigned_request_headers" => array:3 [▼
+    "Host" => array:1 [▼
+      0 => "sellingpartnerapi-eu.amazon.com"
+    ]
+    "x-amz-access-token" => array:1 [▼
+      0 => "..."
+    ]
+    "user-agent" => array:1 [▼
+      0 => "Jasara.AmznSPA/0.1 (Language=PHP/8.0.10; Platform=...)"
+    ]
+  ]
+  "request_data" => []
+  "response_headers" => []
+  "response_data" => array:2 [▼
+    "error_description" => "Client authentication failed"
+    "error" => "invalid_client"
+  ]
+  "response_code" => 403
 ]
 ```
 
