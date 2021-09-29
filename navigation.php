@@ -15,6 +15,7 @@ return [
             'Authorizing Accounts' => 'docs/authorization',
             'Migrating From MWS' => 'docs/migrating-from-mws',
             'Authenticating Requests' => 'docs/authentication',
+            'Logging & Debugging' => 'docs/logging-and-debugging',
         ],
     ],
     'Resources' => [
