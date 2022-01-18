@@ -5,6 +5,7 @@ return [
     'production' => true,
 
     // DocSearch credentials
-    'docsearchApiKey' => '235deb30135fa739366d60e98c8b3272',
+    'docsearchApiKey' => '58d1c7ecb1da7c850f9aadbf5da78727',
     'docsearchIndexName' => 'phpspa',
+    'docsearchAppId' => 'PDH3W9VGN3',
 ];
