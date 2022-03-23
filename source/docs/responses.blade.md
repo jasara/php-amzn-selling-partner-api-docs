@@ -26,7 +26,7 @@ $errors = $subscription->errors; // ErrorListSchema
 $subscription_id = $subscription->payload->subscription_id; // string
 ```
 
-Some properties on DTOs are <a href="https://laravel.com/docs/8.x/collections" target="_blank">Collections</a>. See the example for the ErrorListSchema to see how you might use a collection.
+Some properties on DTOs are <a href="https://laravel.com/docs/9.x/collections" target="_blank">Collections</a>. See the example for the ErrorListSchema to see how you might use a collection.
 
 Any DTO can be transformed into an array by calling `toArray` on the DTO.
 
@@ -39,6 +39,8 @@ The ErrorListSchema is a collection of ErrorSchema objects. You can use all the 
 $subscription = $spa->notifications->getSubscription($notification_type); // GetSubscriptionResponse DTO
 $errors = $subscription->errors; // ErrorListSchema
 $first_error = $subscription->errors->first(); // ErrorSchema
+// OR 
+$first_error = $subscription->errors[0]; // ErrorSchema - IDE types sometime work better when accessing using an array index
 $invalid_client_error = $subscription->errors->where('code', 'invalid_client')->first(); // ErrorSchema
 ```
 

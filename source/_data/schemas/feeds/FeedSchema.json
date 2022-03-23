@@ -1,0 +1,50 @@
+[
+    {
+        "key": "feed_id",
+        "type": "string",
+        "description": "The identifier for the feed. This identifier is unique only in combination with a seller ID.",
+        "example": "FeedId1"
+    },
+    {
+        "key": "feed_type",
+        "type": "string",
+        "description": "The feed type.",
+        "example": "POST_PRODUCT_DATA"
+    },
+    {
+        "key": "marketplace_ids",
+        "type": "array<string>",
+        "description": "A list of identifiers for the marketplaces that the feed is applied to.",
+        "example": "['ATVPDKIKX0DER']"
+    },
+    {
+        "key": "created_time",
+        "type": "CarbonImmutable",
+        "description": "The date and time when the feed was created",
+        "example": "A CarbonImmutable instance"
+    },
+    {
+        "key": "processing_status",
+        "type": "string (enum)",
+        "description": "The processing status of the feed. <a href=\"https://developer-docs.amazon.com/sp-api/docs/feeds-api-v2021-06-30-reference#processingstatuses\">See valid values.</a>",
+        "example": "CANCELLED"
+    },
+    {
+        "key": "processing_start_time",
+        "type": "CarbonImmutable",
+        "description": "The date and time when feed processing started",
+        "example": "A CarbonImmutable instance"
+    },
+    {
+        "key": "processing_end_time",
+        "type": "CarbonImmutable",
+        "description": "The date and time when feed processing completed",
+        "example": "A CarbonImmutable instance"
+    },
+    {
+        "key": "result_feed_document_id",
+        "type": "string",
+        "description": "The identifier for the feed document. This identifier is unique only in combination with a seller ID.",
+        "example": "amzn1.tortuga.3.example-1234"
+    }
+]

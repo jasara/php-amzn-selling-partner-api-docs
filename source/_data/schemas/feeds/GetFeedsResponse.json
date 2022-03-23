@@ -1,0 +1,17 @@
+[
+    {
+        "key": "feeds",
+        "type": "array<schema>",
+        "description": "The feeds.",
+        "example": "FeedListSchema"
+    },
+    {
+        "includeSchema": "feeds/FeedListSchema"
+    },
+    {
+        "key": "next_token",
+        "type": "string",
+        "description": "Returned when the number of results exceeds pageSize. To get the next page of results, call the getFeeds operation with this token as the only parameter.",
+        "example": "VGhpcyB0b2tlbiBpcyBvcGFxdWUgYW5kIGludGVudGlvbmFsbHkgb2JmdXNjYXRlZA"
+    }
+]

@@ -43,6 +43,8 @@ Immediately use the authorization code to get a refresh token for the client.
 
 ```php
 $auth_tokens = $spa->lwa->getTokensFromAuthorizationCode($auth_code_response->payload->authorization_code);
+
+$refresh_token = $auth_tokens->refresh_token;
 ```
 
 Save at least the refresh token in permanent storage. 

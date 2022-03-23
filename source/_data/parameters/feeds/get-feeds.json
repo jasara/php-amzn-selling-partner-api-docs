@@ -1,0 +1,51 @@
+[
+    {
+        "key": "feed_types",
+        "type": "array<string>",
+        "description": "A list of feed types used to filter feeds. When feedTypes is provided, the other filter parameters (processingStatuses, marketplaceIds, createdSince, createdUntil) and pageSize may also be provided. Either feedTypes or nextToken is required.",
+        "example": "['JSON_LISTINGS_FEED']",
+        "optional": true
+    },
+    {
+        "key": "marketplace_ids",
+        "type": "array<string>",
+        "description": "A list of marketplace identifiers used to filter feeds. The feeds returned will match at least one of the marketplaces that you specify. ",
+        "example": "['ATVPDKIKX0DER']",
+        "optional": true
+    },
+    {
+        "key": "page_size",
+        "type": "integer",
+        "description": "The maximum number of feeds to return in a single call.",
+        "example": "10",
+        "optional": true
+    },
+    {
+        "key": "processing_statuses",
+        "type": "array<string> (enum)",
+        "description": "A list of processing statuses used to filter feeds. <a href=\"https://developer-docs.amazon.com/sp-api/docs/feeds-api-v2021-06-30-reference#processingstatuses\">See valid values.</a>",
+        "example": "10",
+        "optional": true
+    },
+    {
+        "key": "created_since",
+        "type": "CarbonImmutable",
+        "description": "The earliest feed creation date and time for feeds included in the response. The default is 90 days ago. Feeds are retained for a maximum of 90 days.",
+        "example": "CarbonImmutable::now()->subDays(10);",
+        "optional": true
+    },
+    {
+        "key": "created_until",
+        "type": "CarbonImmutable",
+        "description": "The latest feed creation date and time for feeds included in the response. The default is now.",
+        "example": "CarbonImmutable::now()->subDays(5);",
+        "optional": true
+    },
+    {
+        "key": "next_token",
+        "type": "string",
+        "description": "A string token returned in the response to your previous request. nextToken is returned when the number of results exceeds the specified pageSize value. To get the next page of results, call the getFeeds operation and include this token as the only parameter. Specifying nextToken with any other parameters will cause the request to fail.",
+        "example": "VGhpcyB0b2tlbiBpcyBvcGFxdWUgYW5kIGludGVudGlvbmFsbHkgb2JmdXNjYXRlZA",
+        "optional": true
+    }
+]

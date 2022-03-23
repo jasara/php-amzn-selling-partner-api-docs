@@ -25,7 +25,11 @@ $config = new AmznSPAConfig(
 );
 
 $spa = new AmznSPA($config);
-$items = $spa->catalog->getItems();
+$items = $spa->catalog_items->getCatalogItem(
+    asin: 'B0020MLK00',
+    marketplace_ids: ['ATVPDKIKX0DER'],
+    included_data: ['images'],
+);
 
 $lwa_access_token = $spa->getAccessToken(); // Get the latest access token.
 ```
@@ -49,7 +53,7 @@ $redirect_uri = 'https://app.yourcompany.com/oauth/amazon/redirect';
 $state = randomString(); // Pass this state into the redirect handler to verify the redirect request.
 
 $spa = new AmznSPA($config);
-$oauth_url = $spa->oauth->getAuthUrl($redirect_url, $state);
+$oauth_url = $spa->lwa->getAuthUrl($redirect_url, $state);
 ```
 
 ### 2. Handle redirect from Amazon
@@ -71,7 +75,7 @@ $config = new AmznSPAConfig(
 );
 
 $spa = new AmznSPA($config);
-$tokens = $spa->getTokensFromRedirect($original_state, $params); 
+$tokens = $spa->lwa->getTokensFromRedirect($original_state, $params); 
 // Tokens is an instance of AuthTokensDTO.
 $refresh_token = $tokens->refresh_token;
 $access_token = $tokens->access_token;

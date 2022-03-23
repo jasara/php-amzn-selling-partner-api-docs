@@ -3,6 +3,7 @@
 $resource_children = [
     'Notifications' => 'docs/resources/notifications',
     'Fulfillment Inbound' => 'docs/resources/fulfillment-inbound',
+    'Feeds' => 'docs/resources/feeds',
 ];
 
 ksort($resource_children);

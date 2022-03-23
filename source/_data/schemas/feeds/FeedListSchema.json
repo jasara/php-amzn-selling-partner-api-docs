@@ -1,0 +1,11 @@
+[
+    {
+        "key": "*",
+        "type": "array<schema>",
+        "description": "A list of feeds",
+        "example": "FeedSchema"
+    },
+    {
+        "includeSchema": "feeds/FeedSchema"
+    }
+]

@@ -42,7 +42,7 @@ array:2 [▼
       0 => "sellingpartnerapi-na.amazon.com"
     ]
     "x-amz-access-token" => array:1 [▼
-      0 => "Atza|..."
+      0 => "[filtered]"
     ]
     "user-agent" => array:1 [▼
       0 => "Jasara.AmznSPA/0.1 (Language=PHP/8.0.10; Platform=...)"
@@ -51,6 +51,8 @@ array:2 [▼
   "request_data" => []
 ]
 ```
+
+Note that secret tokens are automatically filtered from the log.
 
 #### Example Response Log
 ```
@@ -95,7 +97,7 @@ array:5 [▼
       0 => "sellingpartnerapi-eu.amazon.com"
     ]
     "x-amz-access-token" => array:1 [▼
-      0 => "..."
+      0 => "[filtered]"
     ]
     "user-agent" => array:1 [▼
       0 => "Jasara.AmznSPA/0.1 (Language=PHP/8.0.10; Platform=...)"
@@ -111,6 +113,23 @@ array:5 [▼
 ]
 ```
 
+## Jasara Notes
 
+On some requests, we have added notes to help explain obscure errors from Amazon. You can find those in the Response object under `$response->metadata->jasara_notes`
 
+## Callbacks
 
+There are two callbacks available you can add to `AmznSPAConfig` to assist with debugging or authentication exception handling:
+
+```php
+$config = new AmznSPAConfig(
+    // Called whenever there is an authentication problem
+    authentication_exception_callback: function(\Illuminate\Http\Client\Response $response, string $exception_message) {
+        // Handle the exception
+    },
+    // Called for all successful responses
+    response_callback: function(\Illuminate\Http\Client\Response $response) {
+        // Handle the response
+    },
+);
+```
