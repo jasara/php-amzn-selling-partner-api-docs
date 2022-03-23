@@ -13,9 +13,9 @@ Calling the method for the endpoint will return a data transfer object from the 
 
 <x-endpoint-component endpoint="getFeeds" parameters="feeds/get-feeds" payload="feeds/GetFeedsResponse">
     <x-slot name="usage">
-    $response = $spa->feeds->getFeeds(
-        feed_types: ['POST_PRODUCT_DATA'], 
-        marketplace_ids: ['ATVPDKIKX0DER'],
-    ); // GetFeedsResponse
+$response = $spa->feeds->getFeeds(
+    feed_types: ['POST_PRODUCT_DATA'], 
+    marketplace_ids: ['ATVPDKIKX0DER'],
+); // GetFeedsResponse
     </x-slot>
 </x-endpoint-component>
